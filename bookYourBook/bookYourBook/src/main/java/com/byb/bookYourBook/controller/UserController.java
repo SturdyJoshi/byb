@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -21,6 +23,16 @@ public class UserController {
 
     @GetMapping("/mydetails")
     ResponseEntity<UserDetailsDto> getDetails(@RequestParam String userEmail){
-        return ResponseEntity.ok().body(userService.getUserDetails(userEmail));    }
+        return ResponseEntity.ok().body(userService.getUserDetails(userEmail));
+    }
 
+    @GetMapping("/allUsers")
+    ResponseEntity<List<UserDetailsDto>> getAllUsers(){
+        return ResponseEntity.ok().body(userService.getAllUser());
+    }
+
+    @PutMapping("/update")
+    ResponseEntity<UserDetailsDto> updateUser(@RequestBody UserDetailsDto userDetailsDto){
+        return ResponseEntity.ok().body(userService.updateUserDetails(userDetailsDto));
+    }
 }
