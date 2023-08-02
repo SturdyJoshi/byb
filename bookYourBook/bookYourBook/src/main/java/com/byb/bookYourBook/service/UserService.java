@@ -4,6 +4,8 @@ import com.byb.bookYourBook.dto.SignInDto;
 import com.byb.bookYourBook.dto.UserDetailsDto;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public interface UserService {
     boolean createUser(SignInDto signInDto);
@@ -12,5 +14,5 @@ public interface UserService {
 
     UserDetailsDto updateUserDetails(UserDetailsDto userDetailsDto);
 
-    UserDetailsDto getAllUser();
+    List<UserDetailsDto> getAllUser();
 }
