@@ -1,7 +1,7 @@
 package com.byb.bookYourBook.service;
 
-import com.byb.bookYourBook.dto.SignInDto;
-import com.byb.bookYourBook.dto.UserDetailsDto;
+import com.byb.bookYourBook.payload.SignInDto;
+import com.byb.bookYourBook.payload.UserDetailsDto;
 import org.springframework.stereotype.Service;
 
 @Service

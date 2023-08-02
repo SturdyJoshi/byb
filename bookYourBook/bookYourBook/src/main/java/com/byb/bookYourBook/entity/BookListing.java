@@ -28,8 +28,8 @@ public class BookListing {
     private LocalDateTime publishedDate;
     private String status;
 
-
-//    private
+    @ManyToOne
+    private User user;
     @Lob
     @Column(name = "image")
     private byte[] imageData;
@@ -38,6 +38,5 @@ public class BookListing {
 //    @JoinTable(name = "book_genre", joinColumns = @JoinColumn(name = "bookId", nullable = false, referencedColumnName = "id")
 //    ,inverseJoinColumns = @JoinColumn(name = "genreId", nullable = false, referencedColumnName = "id"))
 //    private Set<Genre> genre;
-
 
 }

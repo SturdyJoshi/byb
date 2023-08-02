@@ -1,6 +1,6 @@
 package com.byb.bookYourBook.repository;
 
-import com.byb.bookYourBook.model.User;
+import com.byb.bookYourBook.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
