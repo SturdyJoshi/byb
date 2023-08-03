@@ -1,7 +1,7 @@
 package com.byb.bookYourBook.controller;
 
-import com.byb.bookYourBook.dto.SignInDto;
-import com.byb.bookYourBook.dto.UserDetailsDto;
+import com.byb.bookYourBook.payload.SignInDto;
+import com.byb.bookYourBook.payload.UserDetailsDto;
 import com.byb.bookYourBook.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

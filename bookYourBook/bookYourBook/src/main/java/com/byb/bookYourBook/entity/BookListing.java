@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
+import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Set;
@@ -25,11 +27,12 @@ public class BookListing {
     private int editionYear;
     private String description;
     private double offerPrice;
-    private LocalDateTime publishedDate;
+    @CreationTimestamp
+    private Timestamp publishedDate;
     private String status;
 
-
-//    private
+    @ManyToOne
+    private User user;
     @Lob
     @Column(name = "image")
     private byte[] imageData;
@@ -38,6 +41,5 @@ public class BookListing {
 //    @JoinTable(name = "book_genre", joinColumns = @JoinColumn(name = "bookId", nullable = false, referencedColumnName = "id")
 //    ,inverseJoinColumns = @JoinColumn(name = "genreId", nullable = false, referencedColumnName = "id"))
 //    private Set<Genre> genre;
-
 
 }

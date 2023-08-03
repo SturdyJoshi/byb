@@ -1,7 +1,8 @@
 package com.byb.bookYourBook.serviceImpl;
 
-import com.byb.bookYourBook.dto.SignInDto;
-import com.byb.bookYourBook.dto.UserDetailsDto;
+
+import com.byb.bookYourBook.payload.SignInDto;
+import com.byb.bookYourBook.payload.UserDetailsDto;
 import com.byb.bookYourBook.entity.Address;
 import com.byb.bookYourBook.entity.Roles;
 import com.byb.bookYourBook.entity.User;

@@ -23,9 +23,4 @@ public class PurchasedHistory {
     @CreationTimestamp
     private Timestamp purchasedOn;
 
-    public PurchasedHistory(long historyId) {
-        StringBuilder sb = new StringBuilder();
-        sb.
-        this.historyId = historyId;
-    }
 }

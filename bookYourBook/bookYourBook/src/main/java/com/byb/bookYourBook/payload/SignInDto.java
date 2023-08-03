@@ -1,4 +1,4 @@
-package com.byb.bookYourBook.dto;
+package com.byb.bookYourBook.payload;
 
 import lombok.Data;
 
