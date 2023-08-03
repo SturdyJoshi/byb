@@ -1,5 +1,7 @@
-package com.byb.bookYourBook.model;
+package com.byb.bookYourBook.entity;
 
+import com.byb.bookYourBook.entity.Address;
+import com.byb.bookYourBook.entity.Roles;
 import jakarta.persistence.*;
 import lombok.*;
 

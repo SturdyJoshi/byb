@@ -2,9 +2,9 @@ package com.byb.bookYourBook.serviceImpl;
 
 import com.byb.bookYourBook.dto.SignInDto;
 import com.byb.bookYourBook.dto.UserDetailsDto;
-import com.byb.bookYourBook.model.Address;
-import com.byb.bookYourBook.model.Roles;
-import com.byb.bookYourBook.model.User;
+import com.byb.bookYourBook.entity.Address;
+import com.byb.bookYourBook.entity.Roles;
+import com.byb.bookYourBook.entity.User;
 import com.byb.bookYourBook.repository.AddressReposistory;
 import com.byb.bookYourBook.repository.UserRepository;
 import com.byb.bookYourBook.service.UserService;

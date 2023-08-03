@@ -1,4 +1,4 @@
-package com.byb.bookYourBook.model;
+package com.byb.bookYourBook.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
