@@ -1,0 +1,27 @@
+<div class="overflow-hidden">
+  <app-headerpage class="fixed " (sidenavEvent)="openSideNav($event)"></app-headerpage>
+  <div *ngIf="sidenavmenu" class="fixed left-0 top-0 z-1 w-screen h-screen flex flex-row">
+    <div class="w-1/4 h-full">
+      <app-sidenav (closeSideNav)="openSideNav($event)"></app-sidenav>
+    </div>
+    <div (click)="sidenavClose()" class="w-3/4 h-full opacity-40 bg-black">
+    </div>
+  </div>
+  <div class="h-12"></div>
+    <div *ngFor="let item of list"  >
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-2xl ml-1 text-[#4A55A2] font-semibold">Genre {{item}}</p>
+      <button class="w-24 h-10 rounded-full bg-[#4A55A2] text-white hover:bg-[#7895CB] focus:outline-none">
+        View All
+      </button>
+    </div>
+    <div class="w-full h-44 ml-2 mt-1 scrollable-container">
+      <div class="scrollable-content flex space-x-2">
+        <div *ngFor="let item of list" class="h-full overscroll-scroll">
+          <app-book-listing>{{item}}</app-book-listing>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

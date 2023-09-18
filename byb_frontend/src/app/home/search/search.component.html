@@ -1,0 +1,32 @@
+<div class="overflow-hidden">
+  <app-headerpage class="fixed " (sidenavEvent)="openSideNav($event)"></app-headerpage>
+  <div *ngIf="sidenavmenu" class="fixed left-0 top-0 z-1 w-screen h-screen flex flex-row">
+    <div class="w-1/4 h-full">
+      <app-sidenav (closeSideNav)="openSideNav($event)"></app-sidenav>
+    </div>
+    <div (click)="sidenavClose()" class="w-3/4 h-full opacity-40 bg-black">
+    </div>
+  </div>
+  <div class="h-12"></div>
+  <p class="text-2xl my-2 mx-3 font-semibold text-[#4A55A2]">Searched..</p>
+  <div *ngFor="let item of list" class="my-3">
+    <div class="mx-3" ><app-book-listing2></app-book-listing2></div>
+  </div>
+  <i class="fa-solid fa-arrow-left" style="color: #4a55a2;"></i>
+  <div class="w-full h-8 mb-3 flex justify-between items-center">
+    <button class="bg-[#4A55A2] text-white h-8 w-24 rounded-full border-2 ml-6 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Prev
+    </button>
+    <button class="bg-[#4A55A2] text-white h-8 w-24 rounded-full border-2 mr-6 flex items-center justify-center">
+        Next
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+    </button>
+</div>
+
+
+</div>

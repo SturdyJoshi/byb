@@ -1,0 +1,16 @@
+/* Add this CSS to your stylesheet */
+.scrollable-container {
+  overflow: hidden;
+}
+
+.scrollable-content {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* Hide standard scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide standard scrollbar for Internet Explorer and Edge */
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 0; /* Hide standard scrollbar for Chrome, Safari, and Opera */
+}
+

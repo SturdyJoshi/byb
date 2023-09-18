@@ -1,0 +1,62 @@
+<div class="w-full h-full bg-[#4A55A2]  " >
+  <span
+    class=" flex flex-col pt-2 pr-2 items-end  cursor-pointer "
+    (click)="close()"
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M2 2L18 18M2 18L18 2L2 18Z"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  </span>
+  <div class="flex flex-col justify-start items-center">
+    <img src = "assets/logoNB.png" class="w-1/4 mt-5">
+    <p class="text-3xl text-white pt-2">BYB</p>
+    <p class="text-sm text-white pb-2" >Rekindle Your Love For Reading Explore</p>
+    <div class="border-t border-white w-full"></div>
+  </div>
+  <div class="pl-10 mt-6 w-full">
+    <div class="flex items-center cursor-pointer" (click)="categoryClick()">
+      <p class="text-xl text-white mr-2">Categories</p>
+      <svg style=" margin-left: 7px;"
+        class="text-white transition-transform transform"
+        [class.rotate-90]="genreShow"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.42408 16.0754C7.0712 16.4289 6.52081 16.4289 6.16792 16.0754C5.81503 15.7219 5.81503 15.1715 6.16792 14.818L10.986 10L6.16792 5.18196C5.81503 4.82847 5.81503 4.27808 6.16792 3.92459C6.52081 3.5711 7.0712 3.5711 7.42408 3.92459L12.5716 9.6705C12.9244 10.024 12.9244 10.5744 12.5716 10.9279L7.42408 16.0754Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+  <div *ngIf="genreShow" class="text-white text-sm">
+    <ul>
+      <li class="py-2 px-16"><a href="#" >genre 1</a></li>
+      <li class="py-2 px-16"><a href="#" >genre 2</a></li>
+      <li class="py-2 px-16"><a href="#" >genre 3</a></li>
+      <li class="py-2 px-16"><a href="#" >genre 4</a></li>
+      <li class="py-2 px-16"><a href="#" >genre 5</a></li>
+      <li class="py-2 px-16"><a href="#" >genre 6</a></li>
+    </ul>
+  </div>
+
+</div>

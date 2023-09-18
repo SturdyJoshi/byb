@@ -1,0 +1,16 @@
+<div class="h-48 bg-[#7895CB] flex items-center" (click)="getDetails()">
+  <div class="h-full w-44 justify-center align-middle ml-2  flex items-center"> <!-- Added 'flex items-center' here -->
+    <div class="justify-center w-36 my-2 h-44 bg-slate-600"></div>
+  </div>
+  <div class="h-5/6 w-4/6 justify-center mx-2 flex flex-col "> <!-- Added 'flex flex-col items-center' here -->
+    <p class="text-2xl font-bold text-white">BOOK <ng-content></ng-content></p>
+    <p class="text-sm text-white">Author (YEAR)</p>
+    <p class="text-2xl my-2 font-bold text-white"><del>300</del> 140</p>
+    <div class="flex flex-row">
+      <p class="text-sm px-2 bg-[#4A55A2] w-fit rounded-full mb-1 text-white">Genre 1</p>
+      <p class="text-sm px-2 bg-[#4A55A2] w-fit rounded-full mb-1 text-white">Genre 1</p>
+      <p class="text-sm px-2 bg-[#4A55A2] w-fit rounded-full mb-1 text-white">Genre 1</p>
+    </div>
+    <p class="mt-2 text-sm text-[white]"><span class="font-semibold">Description: - </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque culpa voluptas odit nobis maxime, magni cum placeat excepturi eius, dignissimos unde. Sequi debitis ducimus, nam maiores repellendus veritatis non quia.</p>
+  </div>
+</div>
